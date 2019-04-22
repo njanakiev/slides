@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "ideaslab",
+"features": [
+{ "type": "Feature", "properties": { "title": "Feature" }, "geometry": { "type": "Point", "coordinates": [ 13.03951621055603, 47.823647260665894, 0.0 ] } }
+]
+}
