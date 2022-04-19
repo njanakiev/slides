@@ -6,7 +6,7 @@ BASE_URL = "https://njanakiev.github.io/slides/"
 
 if __name__ == '__main__':
     folders = [f for f in os.listdir("./") 
-        if os.path.isdir(f) and not f.startswith(".")]
+        if os.path.isdir(f) and not f.startswith(".") and not (f == "reveal.js")]
 
     template_file = "index.html.j2"
     template_loader = jinja2.FileSystemLoader(searchpath="./")
