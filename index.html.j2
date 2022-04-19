@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slides</title>
+</head>
+<body>
+    <h1>Slides</h1>
+	<ul>
+        {% for item in items %}<li><a href="{{ base_url }}{{ item }}">{{ item }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
