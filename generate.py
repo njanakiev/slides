@@ -2,8 +2,6 @@ import os
 import jinja2
 
 
-BASE_URL = "https://njanakiev.github.io/slides/"
-
 if __name__ == '__main__':
     folders = [f for f in os.listdir("./") 
         if os.path.isdir(f) and not f.startswith(".") and not (f == "reveal.js")]
@@ -14,8 +12,7 @@ if __name__ == '__main__':
     template = template_env.get_template( template_file )
 
     rendered_text = template.render({
-        'items': folders,
-        'base_url': BASE_URL
+        'items': folders
     })
 
     with open("index.html", "wt") as f:
